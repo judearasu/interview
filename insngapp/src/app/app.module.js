@@ -1,3 +1,3 @@
 (function() {
-  app.module('myApp', []);
+  app.module('myApp', [app.posts]);
 })();
