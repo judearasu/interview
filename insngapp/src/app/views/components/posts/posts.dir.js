@@ -13,7 +13,7 @@
 
         return directive;
         function link(scope, element, attrs, post){
-
+          post.init();
         }
     }
 })();

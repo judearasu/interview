@@ -1,3 +1,3 @@
 (function() {
-  angular.module('myApp', ['app.posts']);
+  angular.module('myApp', ['app.posts','ngResource']);
 })();
