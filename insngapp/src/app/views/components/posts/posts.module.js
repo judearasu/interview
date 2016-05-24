@@ -1,3 +1,3 @@
-(function(){
-  app.module('app.posts',[]);
+(function() {
+    angular.module('app.posts', []);
 })();
