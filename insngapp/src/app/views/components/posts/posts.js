@@ -6,6 +6,9 @@ function postCtrl(PostService) {
 	vm.init = init;
 	vm.getPost = getPost;
 	vm.thead = [{
+		"name": "",
+		"value": ""
+	}, {
 		"name": "id",
 		"value": "Id"
 	}, {

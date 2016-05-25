@@ -28,11 +28,14 @@
 								</td>
 				</tr>
 </table> -->
-<table>
+<table border="1">
 				<tr>
 								<th ng-repeat="column in post.thead">{{column.value}}</th>
 				</tr>
 				<tr ng-repeat="row in post.posts">
-								<td ng-repeat="column in post.thead">{{row[column.name]}}</td>
+													<td ng-if="!column.value">
+														Hello
+													</td>
+													<td ng-if="column.value" ng-repeat="column in post.thead">{{row[column.name]}}</td>
 				</tr>
 </table>
