@@ -1,41 +1,41 @@
 <!-- <section ng-repeat="post in post.posts">
-				<p>
-								<div>
-												{{post.id}}
-												{{post.title}}
-								</div>
-								<div>
-												{{post.body}}
-								</div>
-				</p>
-</section> -->
+  <p>
+    <div>
+      {{post.id}}
+      {{post.title}}
+    </div>
+    <div>
+      {{post.body}}
+    </div>
+  </p>
+</section>
 
-<!-- <table border="1">
-				<tr>
-								<th ng-repeat="thead in post.thead">
-												{{thead.name}}
-								</th>
-				</tr>
-				<tr ng-repeat="post in post.posts">
-								<td {{post.elem}}>
-												{{post.id}}
-								</td>
-								<td {{post.elem}}>
-												{{post.title}}
-								</td>
-								<td {{post.elem}}>
-												{{post.body}}
-								</td>
-				</tr>
+<table border="1">
+  <tr>
+    <th ng-repeat="thead in post.thead">
+      {{thead.name}}
+    </th>
+  </tr>
+  <tr ng-repeat="post in post.posts">
+    <td {{post.elem}}>
+      {{post.id}}
+    </td>
+    <td {{post.elem}}>
+      {{post.title}}
+    </td>
+    <td {{post.elem}}>
+      {{post.body}}
+    </td>
+  </tr>
 </table> -->
 <table border="1">
-				<tr>
-								<th ng-repeat="column in post.thead">{{column.value}}</th>
-				</tr>
-				<tr ng-repeat="row in post.posts">
-													<td ng-if="!column.value">
-														Hello
-													</td>
-													<td ng-if="column.value" ng-repeat="column in post.thead">{{row[column.name]}}</td>
-				</tr>
+  <tr>
+    <th ng-repeat="column in post.thead">{{column.value}}</th>
+  </tr>
+  <tr ng-repeat="row in post.posts">
+    <td ng-if="!column.value">
+      Hello
+    </td>
+    <td ng-if="column.value" ng-repeat="column in post.thead">{{row[column.name]}}</td>
+  </tr>
 </table>
